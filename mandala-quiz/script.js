@@ -163,7 +163,7 @@ function renderResults(){
 }
 
 function shareOnX(username, score){
-  const text = `I just scored ${score}/${GAME.totalQuestions * (GAME.difficulty==='easy'?5:GAME.difficulty==='medium'?10:15)} on the Mandala Quiz Challenge 🏆%0ABuilt on @Polkadot and powered by @MandalaChain%0A— built by @0xdeola ✨%0A#MandalaChain #Web3`;
+  const text = `I just scored ${score}/${GAME.totalQuestions * (GAME.difficulty==='easy'?5:GAME.difficulty==='medium'?10:15)} on the Mandala Quiz Challenge 🏆%0A@MandalaChain is Built on @Polkadot%0A— game by @0xdeola ✨%0A👉 Play here: [https://mandala-game.vercel.app/]%0A#MandalaChain #Web3`;
   const url = `https://twitter.com/intent/tweet?text=${text}`;
   window.open(url, '_blank');
 }
